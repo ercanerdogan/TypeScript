@@ -1,7 +1,7 @@
 function selamVer(isim) {
-    return "Merhaba " + isim;
+    return "Hi " + isim;
 }
-var mesaj = selamVer("Ercan Erdoğan");
+var mesaj = selamVer("Ercan");
 console.log(mesaj);
 var Renkler;
 (function (Renkler) {
@@ -11,3 +11,8 @@ var Renkler;
 })(Renkler || (Renkler = {}));
 var renk = Renkler.Kırmızı;
 console.log(renk);
+//deger variable could set any type of value
+var deger;
+deger = 2;
+deger = "hello";
+deger = { adi: "Ercan", mobileNumber: 123456 };
