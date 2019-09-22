@@ -19,6 +19,13 @@ function add3(x:number, y?:number):number{
     else return x;
 }
 
+function invite(firstGuest:string, ...otherGuests:string[]):string{
+
+    return firstGuest+ " - " + otherGuests.join("-");
+
+
+}
+
 console.log(add(1,2));
 console.log(add("Izmir-",1));
 
@@ -32,3 +39,6 @@ console.log(resultAnonym(33));
 console.log(add3(32));
 
 console.log(add3(32,33));
+
+
+console.log(invite("ercan", "burak", "caner", "john", "smith"))
