@@ -1,4 +1,14 @@
 class Person{
+    private _PersonName:string;
+
+    get personName():string{
+        return "Welcome : Mr. / Mrs. " + this._PersonName;
+    }
+
+    set personName(pName:string){
+        this._PersonName = pName;
+    }
+
     savePerson(personType:string)
     {
         console.log("Person "+ personType +" saved");
@@ -29,3 +39,5 @@ let newEmployee = new employee();
 newEmployee.savePerson("Employee");
 newEmployee.payCheck();
 
+newCustomer.personName = "Ercan";
+console.log(newCustomer.personName);

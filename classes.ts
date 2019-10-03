@@ -19,3 +19,5 @@ class house{
 
 let newHouse = new house(4, 3, 30000);
 newHouse.getList();
+
+

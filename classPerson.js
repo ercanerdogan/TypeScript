@@ -14,6 +14,16 @@ var __extends = (this && this.__extends) || (function () {
 var Person = /** @class */ (function () {
     function Person() {
     }
+    Object.defineProperty(Person.prototype, "personName", {
+        get: function () {
+            return "Welcome : Mr. / Mrs. " + this._PersonName;
+        },
+        set: function (pName) {
+            this._PersonName = pName;
+        },
+        enumerable: true,
+        configurable: true
+    });
     Person.prototype.savePerson = function (personType) {
         console.log("Person " + personType + " saved");
     };
@@ -45,3 +55,5 @@ newCustomer.makeOrder();
 var newEmployee = new employee();
 newEmployee.savePerson("Employee");
 newEmployee.payCheck();
+newCustomer.personName = "Ercan";
+console.log(newCustomer.personName);
